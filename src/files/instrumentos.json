@@ -33,5 +33,19 @@
     "modelo": "Juninho Afram",
     "estado": "Novo",
     "codigo": "cc0236ec-f1f4-47ae-a941-7384c6d18acf"
+  },
+  {
+    "tipo": "Guitarra",
+    "marca": "Ibanez",
+    "modelo": "Joe Satriani",
+    "estado": "Novo",
+    "codigo": "1a1759eb-779d-4ebf-be35-5c75e5ff605f"
+  },
+  {
+    "tipo": "Bateria",
+    "marca": "Pearl",
+    "modelo": "Export",
+    "estado": "Usado",
+    "codigo": "10e28f0f-fbf0-42a8-94b0-41b65e8fd210"
   }
 ]

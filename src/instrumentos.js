@@ -37,7 +37,13 @@ async function run() {
             break;
         }
         case 'consultar': {
-            /* Coloque sua resposta aqui */
+          const tipo =  await rl.question("Informe o tipo do instrumento(violão, guitarra, baixo, teclado...)? ");
+          const modelo = await rl.question("Qual o modelo? ");
+
+          const instrumentoCrud = new InstrumentoCrud()
+
+          instrumentoCrud.consultar(tipo, modelo)
+
             rl.close();
             break;
         }
