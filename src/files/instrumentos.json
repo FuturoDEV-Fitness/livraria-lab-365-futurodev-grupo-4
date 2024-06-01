@@ -1,1 +1,37 @@
-[]
+[
+  {
+    "tipo": "Guitarra",
+    "marca": "Fender",
+    "modelo": "Stratocaster",
+    "estado": "Novo",
+    "codigo": "1472845d-6fb1-4c42-99f1-baa5acc6ad73"
+  },
+  {
+    "tipo": "Violão",
+    "marca": "Gianini",
+    "modelo": "Estudante",
+    "estado": "Usado",
+    "codigo": "994f73b4-52cc-4483-8aec-1f3897557ee7"
+  },
+  {
+    "tipo": "Teclado",
+    "marca": "Yamaha",
+    "modelo": "Genos2",
+    "estado": "Novo",
+    "codigo": "20b305c4-8d4c-42c8-9973-d1ba22f03a8c"
+  },
+  {
+    "tipo": "Baixo",
+    "marca": "Fender",
+    "modelo": "Jazz Bass",
+    "estado": "Usado",
+    "codigo": "6646b91f-d0fc-470c-8df5-43311c06697f"
+  },
+  {
+    "tipo": "Guitarra",
+    "marca": "Tagima",
+    "modelo": "Juninho Afram",
+    "estado": "Novo",
+    "codigo": "cc0236ec-f1f4-47ae-a941-7384c6d18acf"
+  }
+]
