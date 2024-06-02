@@ -32,7 +32,12 @@ async function run() {
             rl.close();
             break;
         case 'deletar': {
-            /* Coloque sua resposta aqui */
+            const codigo = await rl.question("Informe o código do instrumento a ser deletado: ")
+
+            const instrumentoCrud = new InstrumentoCrud()
+
+            instrumentoCrud.deletar(codigo)
+
             rl.close();
             break;
         }
@@ -42,7 +47,7 @@ async function run() {
 
           const instrumentoCrud = new InstrumentoCrud()
 
-          instrumentoCrud.consultar(tipo, modelo)
+          instrumentoCrud.consultar(tipo.toLowerCase(), modelo.toLowerCase())
 
             rl.close();
             break;

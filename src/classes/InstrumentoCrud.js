@@ -4,6 +4,8 @@ class InstrumentoCrud {
     this.filePath = "./src/files/instrumentos.json";
   }
 
+  /***************** CRIAR **********************/
+
   criar(instrumento) {
     const conteudoAtual = JSON.parse(fs.readFileSync(this.filePath, "utf-8"));
 
@@ -12,26 +14,56 @@ class InstrumentoCrud {
       marca: instrumento.getMarca,
       modelo: instrumento.getModelo,
       estado: instrumento.getEstado,
-      codigo: instrumento.getCodigo
-
+      codigo: instrumento.getCodigo,
     });
-    fs.writeFileSync(this.filePath, JSON.stringify(conteudoAtual, null, 2), "utf-8");
+    fs.writeFileSync(
+      this.filePath,
+      JSON.stringify(conteudoAtual, null, 2),
+      "utf-8"
+    );
   }
-  
-  consultar(tipo, modelo){
+
+  /***************** CONSULTAR **********************/
+
+  consultar(tipo, modelo) {
     const conteudoAtual = JSON.parse(fs.readFileSync(this.filePath, "utf-8"));
 
-    const instrumentoConsultado = conteudoAtual.find(instrumento => instrumento.tipo === tipo && instrumento.modelo === modelo)
-     
-    if(instrumentoConsultado){
-      console.log(instrumentoConsultado)
-    }else{
-      console.log("Instrumento não encontrado!")
+    const instrumentoConsultado = conteudoAtual.find(
+      (instrumento) =>
+        instrumento.tipo === tipo && instrumento.modelo === modelo
+    );
+
+    if (instrumentoConsultado) {
+      console.log(instrumentoConsultado);
+      
+    } else {
+      console.log("Instrumento não encontrado!");
     }
+
     
   }
 
-}
+  /***************** DELETAR **********************/
 
+  deletar(codigo) {
+    let conteudoAtual = JSON.parse(fs.readFileSync(this.filePath, "utf-8"));
+
+    if (conteudoAtual.find((instrumento) => instrumento.codigo === codigo)) {
+      conteudoAtual = conteudoAtual.filter(
+        (instrumento) => instrumento.codigo !== codigo
+      );
+
+      console.log("Instrumento excluído com sucesso!!!")
+
+      fs.writeFileSync(
+        this.filePath,
+        JSON.stringify(conteudoAtual, null, 2),
+        "utf-8"
+      );
+    } else {
+      console.log("Código não encotrado!!!");
+    }
+  }
+}
 
 module.exports = InstrumentoCrud;

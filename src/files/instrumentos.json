@@ -1,51 +1,58 @@
 [
   {
-    "tipo": "Guitarra",
-    "marca": "Fender",
-    "modelo": "Stratocaster",
-    "estado": "Novo",
-    "codigo": "1472845d-6fb1-4c42-99f1-baa5acc6ad73"
+    "tipo": "guitarra",
+    "marca": "fender",
+    "modelo": "yngwie malmsteen",
+    "estado": "novo",
+    "codigo": "e6113599-db00-4837-8136-64702f471cd2"
   },
   {
-    "tipo": "Violão",
-    "marca": "Gianini",
-    "modelo": "Estudante",
-    "estado": "Usado",
-    "codigo": "994f73b4-52cc-4483-8aec-1f3897557ee7"
+    "tipo": "violão",
+    "marca": "gianini",
+    "modelo": "start",
+    "estado": "usado",
+    "codigo": "3848456e-1123-45b0-9461-f6cd5aa46cee"
   },
   {
-    "tipo": "Teclado",
-    "marca": "Yamaha",
-    "modelo": "Genos2",
-    "estado": "Novo",
-    "codigo": "20b305c4-8d4c-42c8-9973-d1ba22f03a8c"
+    "tipo": "teclado",
+    "marca": "yamaha",
+    "modelo": "genos2",
+    "estado": "novo",
+    "codigo": "783c8eec-a5bd-4bf1-97c7-d92b83e162b0"
   },
   {
-    "tipo": "Baixo",
-    "marca": "Fender",
-    "modelo": "Jazz Bass",
-    "estado": "Usado",
-    "codigo": "6646b91f-d0fc-470c-8df5-43311c06697f"
+    "tipo": "baixo",
+    "marca": "fender",
+    "modelo": "jazz bass",
+    "estado": "novo",
+    "codigo": "b2f0f9a6-f499-4ec4-9a15-eba343741734"
   },
   {
-    "tipo": "Guitarra",
-    "marca": "Tagima",
-    "modelo": "Juninho Afram",
-    "estado": "Novo",
-    "codigo": "cc0236ec-f1f4-47ae-a941-7384c6d18acf"
+    "tipo": "guitarra",
+    "marca": "tagima",
+    "modelo": "juninho afram",
+    "estado": "usado",
+    "codigo": "3e038cb4-9826-4b5c-84cc-8037b0107fd0"
   },
   {
-    "tipo": "Guitarra",
-    "marca": "Ibanez",
-    "modelo": "Joe Satriani",
-    "estado": "Novo",
-    "codigo": "1a1759eb-779d-4ebf-be35-5c75e5ff605f"
+    "tipo": "guitarra",
+    "marca": "ibanez",
+    "modelo": "joe satriani",
+    "estado": "novo",
+    "codigo": "2a93e036-b77b-46a7-a498-ce6829763ad0"
   },
   {
-    "tipo": "Bateria",
-    "marca": "Pearl",
-    "modelo": "Export",
-    "estado": "Usado",
-    "codigo": "10e28f0f-fbf0-42a8-94b0-41b65e8fd210"
+    "tipo": "bateria",
+    "marca": "pearl",
+    "modelo": "export",
+    "estado": "novo",
+    "codigo": "e755b390-5beb-4987-9962-9936a32bf001"
+  },
+  {
+    "tipo": "guitarra",
+    "marca": "fender",
+    "modelo": "telecaster",
+    "estado": "novo",
+    "codigo": "e0b156e6-b8cd-49da-a2d4-75b58957d8ee"
   }
 ]

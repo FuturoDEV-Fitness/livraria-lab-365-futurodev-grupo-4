@@ -10,12 +10,12 @@ class Instrumento {
     #codigo = ''
 
     constructor(tipo) {
-       this.#tipo = tipo
+       this.#tipo = tipo.toLowerCase()
        this.#codigo = crypto.randomUUID();
     }
 
     set setMarca(marca){
-        this.#marca = marca
+        this.#marca = marca.toLowerCase()
     }
 
     get getMarca(){
@@ -23,24 +23,20 @@ class Instrumento {
     }
 
     set setModelo(modelo){
-        this.#modelo = modelo
+        this.#modelo = modelo.toLowerCase()
     }
 
     get getModelo(){
         return this.#modelo
     }
 
-    set setTipo(tipo){
-        this.#tipo = tipo
-
-    }
-
+   
     get getTipo(){
         return this.#tipo
 
     }
     set setEstado(estado){
-        this.#estado = estado
+        this.#estado = estado.toLowerCase()
     }
 
     get getEstado(){
