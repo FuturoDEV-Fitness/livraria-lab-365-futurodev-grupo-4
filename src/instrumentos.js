@@ -52,6 +52,21 @@ async function run() {
             rl.close();
             break;
         }
+
+        case 'alterar': {
+            const codigo = await rl.question("Informe o código do produto que deseja alterar: ")
+            const tipo =  (await rl.question("Informe o tipo do instrumento que deseja incluir: (violão, guitarra, baixo, teclado...)? ")).toLocaleLowerCase()
+            const marca = (await rl.question("Qual a marca do instrumento? ")).toLocaleLowerCase()
+            const modelo = (await rl.question("Qual o modelo? ")).toLocaleLowerCase()
+            const estado = (await rl.question("Qual o estado do instrumento(novo, usado)? ")).toLocaleLowerCase()
+
+            const instrumentoCrud = new InstrumentoCrud()
+            instrumentoCrud.alterar(codigo, tipo, marca, modelo, estado)
+
+            rl.close();
+            break;
+
+        }
         default:
             console.log("Ação não reconhecida.");
             rl.close();

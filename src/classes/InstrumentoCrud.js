@@ -35,12 +35,9 @@ class InstrumentoCrud {
 
     if (instrumentoConsultado) {
       console.log(instrumentoConsultado);
-      
     } else {
       console.log("Instrumento não encontrado!");
     }
-
-    
   }
 
   /***************** DELETAR **********************/
@@ -53,7 +50,7 @@ class InstrumentoCrud {
         (instrumento) => instrumento.codigo !== codigo
       );
 
-      console.log("Instrumento excluído com sucesso!!!")
+      console.log("Instrumento excluído com sucesso!!!");
 
       fs.writeFileSync(
         this.filePath,
@@ -62,6 +59,27 @@ class InstrumentoCrud {
       );
     } else {
       console.log("Código não encotrado!!!");
+    }
+  }
+
+  alterar(codigo, tipo, marca, modelo, estado) {
+    const conteudoAtual = JSON.parse(fs.readFileSync(this.filePath, "utf-8"));
+
+    if (conteudoAtual.find((instrumento) => instrumento.codigo === codigo)) {
+      const index = conteudoAtual.findIndex(
+        (instrumento) => instrumento.codigo === codigo
+      );
+      conteudoAtual[index].tipo = tipo;
+      conteudoAtual[index].marca = marca;
+      conteudoAtual[index].modelo = modelo;
+      conteudoAtual[index].estado = estado;
+      fs.writeFileSync(
+        this.filePath,
+        JSON.stringify(conteudoAtual, null, 2),
+        "utf-8"
+      );
+    } else {
+      console.log("Código do instrumento não encontrado");
     }
   }
 }
