@@ -1,1 +1,23 @@
-[]
+[
+  {
+    "codigo": "1a84e982-f80e-40b4-9b0d-8078a6654225",
+    "nome": "Fuego y sangre primera parte",
+    "quantidadePaginas": 1700,
+    "genero": "fantasia",
+    "autor": "RR Martin gordo vaguabundo que no termina los libros"
+  },
+  {
+    "codigo": "0467f780-6be4-4b42-a58a-63eee1f2036f",
+    "nome": "cien años de soledad",
+    "quantidadePaginas": 900,
+    "genero": "fantasia realista",
+    "autor": "Gabriel Garcia M"
+  },
+  {
+    "codigo": "d37fd706-99de-4eaf-b8b3-6634dc321c64",
+    "nome": "tormenta de espadas",
+    "quantidadePaginas": 1000,
+    "genero": "fantasia",
+    "autor": "RR Martin"
+  }
+]
