@@ -1,4 +1,7 @@
 const readline = require('readline/promises');
+const Leitor = require('./classes/Leitor');
+const LeitorCrud = require('./classes/LeitorCrud');
+
 
 const rl = readline.createInterface({
     input: process.stdin,
@@ -11,16 +14,37 @@ async function run() {
 
     switch (resposta) {
         case 'criar':
-            /* Coloque sua resposta aqui  */
+            
+            const nome = await rl.question("Qual o nome do leitor?")
+            const cpf = await rl.question("Qual o CPF do leitor?")
+            const dataNascimento = await rl.question("Qual o data de nascimento do leitor?")
+            
+            const leitor = new Leitor(nome)
+            //novoLeitor.setNome = nome
+            leitor.setCpf = cpf
+            leitor.setDataNascimento = dataNascimento
+
+        
+            const crud = new LeitorCrud()
+            crud.criar(leitor)
+            
             rl.close();
             break;
         case 'deletar': {
-            /* Coloque sua resposta aqui */
+            const codigo  = await rl.question("Qual o código do leitor que você deseja excluir?")
+
+            const crud = new LeitorCrud()
+            crud.deletar(codigo)
+
             rl.close();
             break;
         }
         case 'consultar': {
-            /* Coloque sua resposta aqui */
+            const palavraPesquisada  = await rl.question("Qual o leitor que você deseja consultar?")
+
+            const crud = new LeitorCrud()
+            crud.consultar(palavraPesquisada)
+
             rl.close();
             break;
         }
