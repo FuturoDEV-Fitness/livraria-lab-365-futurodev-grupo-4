@@ -1,1 +1,58 @@
-[]
+[
+  {
+    "tipo": "guitarra",
+    "marca": "fender",
+    "modelo": "yngwie malmsteen",
+    "estado": "novo",
+    "codigo": "e6113599-db00-4837-8136-64702f471cd2"
+  },
+  {
+    "tipo": "violão",
+    "marca": "gianini",
+    "modelo": "start",
+    "estado": "usado",
+    "codigo": "3848456e-1123-45b0-9461-f6cd5aa46cee"
+  },
+  {
+    "tipo": "teclado",
+    "marca": "yamaha",
+    "modelo": "genos2",
+    "estado": "novo",
+    "codigo": "783c8eec-a5bd-4bf1-97c7-d92b83e162b0"
+  },
+  {
+    "tipo": "baixo",
+    "marca": "fender",
+    "modelo": "jazz bass",
+    "estado": "novo",
+    "codigo": "b2f0f9a6-f499-4ec4-9a15-eba343741734"
+  },
+  {
+    "tipo": "guitarra",
+    "marca": "tagima",
+    "modelo": "juninho afram",
+    "estado": "usado",
+    "codigo": "3e038cb4-9826-4b5c-84cc-8037b0107fd0"
+  },
+  {
+    "tipo": "guitarra",
+    "marca": "ibanez",
+    "modelo": "joe satriani",
+    "estado": "novo",
+    "codigo": "2a93e036-b77b-46a7-a498-ce6829763ad0"
+  },
+  {
+    "tipo": "bateria",
+    "marca": "pearl",
+    "modelo": "export",
+    "estado": "novo",
+    "codigo": "e755b390-5beb-4987-9962-9936a32bf001"
+  },
+  {
+    "tipo": "guitarra",
+    "marca": "fender",
+    "modelo": "stratocaster",
+    "estado": "novo",
+    "codigo": "e0b156e6-b8cd-49da-a2d4-75b58957d8ee"
+  }
+]
