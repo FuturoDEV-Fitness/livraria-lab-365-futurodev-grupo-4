@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "codigo": "dcd30a45-f3ca-4b60-a9ed-425215cb4a2f",
+    "nome": "Auditório Palhoça",
+    "descricao": "Descrição de teste",
+    "quantidade": 360
+  },
+  {
+    "codigo": "5d36cd69-62d4-479a-9c97-e181da39e75e",
+    "nome": "Auditório São José",
+    "descricao": "Descrição de teste",
+    "quantidade": 500
+  },
+  {
+    "codigo": "7be66eb2-0201-436b-b8c2-76f051b147df",
+    "nome": "Auditório Floripa",
+    "descricao": "Descrição de teste",
+    "quantidade": 1000
+  }
+]
